@@ -89,14 +89,7 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-   // Animación de aparición al hacer scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.2 });
-
-document.querySelectorAll('.fade-section, .slide-up').forEach(el => observer.observe(el));
+   
 
     // Efecto burbujas suaves (movimiento aleatorio)
     document.querySelectorAll('.bubbles span').forEach((b, i) => {
@@ -107,4 +100,5 @@ document.querySelectorAll('.fade-section, .slide-up').forEach(el => observer.obs
 </body>
 
 </html>
+
 
